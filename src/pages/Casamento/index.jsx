@@ -19,7 +19,7 @@ export default function Casamento(){
             <Menu />
             <div className="products-cart">
                 {casamento.map((item) => {
-                    return <CardCart key={item.id} name={item.name} id={item.id} image={item.image} handleClick={handleClick} />
+                    return <CardCart key={item.id} name={item.name} id={item.id} image={item.image} description={item} handleClick={handleClick} />
                 })}
             </div>
         </>

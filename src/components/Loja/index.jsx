@@ -15,7 +15,7 @@ export default function Loja(){
     return(
         <Container>
             {bebidas.map((item) => {
-                return <CardLoja key={item.name} name={item.name} image={item.image_url} />
+                return <CardLoja key={item.name} name={item.name} image={item.image_url} description={item.description} liters={item.volume.value} fabricacao={item.first_brewed}/>
             })}
         </Container>
             

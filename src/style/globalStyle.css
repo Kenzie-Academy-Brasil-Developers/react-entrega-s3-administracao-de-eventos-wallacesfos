@@ -30,3 +30,7 @@ html, body{
     flex-wrap: wrap;
 
 }
+
+.pointer{
+    cursor: pointer;
+}

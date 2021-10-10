@@ -4,6 +4,7 @@ export const AuthContext = react.createContext();
 
 export const AuthProvider = ({children}) => {
     const [event, SetEvent] = useState(false)
+    const [description, setDescription] = useState(false)
     const [click, setClick] = useState()
     const [casamento, setCasamento] = useState([])
     const [confraternizacao, setConfraternizacao] = useState([])
@@ -28,7 +29,7 @@ export const AuthProvider = ({children}) => {
     }
 
     return(
-        <AuthContext.Provider value={{SelectEvents, event, addCasamento, setClick, click, addConfraternizacao, addFormatura, casamento, confraternizacao, formatura, setCasamento, setFormatura, setConfraternizacao}}>
+        <AuthContext.Provider value={{description, setDescription,SelectEvents, event, addCasamento, setClick, click, addConfraternizacao, addFormatura, casamento, confraternizacao, formatura, setCasamento, setFormatura, setConfraternizacao}}>
             {children}
         </AuthContext.Provider>
     )
