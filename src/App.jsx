@@ -1,11 +1,12 @@
 import Routers from './routes';
-import './style/globalStyle.css'
+import CreateGlobalStyle  from './style/globalStyle';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Routers />
+        <CreateGlobalStyle />
       </header>
     </div>
   );

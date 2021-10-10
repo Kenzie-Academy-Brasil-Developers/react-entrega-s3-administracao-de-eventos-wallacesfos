@@ -1,3 +1,8 @@
+import { createGlobalStyle } from 'styled-components';
+
+
+export default createGlobalStyle`
+
 html, body{
     background-color: #101010;
     margin: 0;
@@ -34,3 +39,33 @@ html, body{
 .pointer{
     cursor: pointer;
 }
+
+
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 415px){
+    .navbar{
+        flex-direction:column;
+        align-items: center;
+        height: auto;
+    }
+
+    .navbar-links{
+        flex-direction: column;
+    }
+
+    .btn-nav{
+        margin: 5px;
+    }
+}
+
+
+
+`

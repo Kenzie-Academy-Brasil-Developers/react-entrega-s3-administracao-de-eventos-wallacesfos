@@ -13,10 +13,10 @@ export default function Menu(){
     }
 
     return(
-            <Nav>
+            <Nav className="navbar">
                 <Logo onClick={() => routes('')}>Boteco do Wallace</Logo>
 
-                <Div>
+                <Div className="navbar-links">
                     <Links className="btn-nav" onClick={() => routes('casamento')}>Casamento <span className="number">{casamento.length}</span></Links>
                     <Links className="btn-nav" onClick={() => routes('formatura')}>Formatura <span className="number">{formatura.length}</span></Links>
                     <Links className="btn-nav" onClick={() => routes('confraternizacao')}>Confraternização <span className="number">{confraternizacao.length}</span></Links>
